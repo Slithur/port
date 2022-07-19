@@ -1,9 +1,251 @@
-import { Link } from 'react-router-dom';
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-const Enter = () => {
-    return  <h1> This is the Enter page</h1>
 
-
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
 }
 
-export default Enter;
+const cards = [1,];
+
+const theme = createTheme();
+
+export default function Album() {
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <AppBar position="static">
+        <Toolbar>
+          <Button color="inherit">Resume</Button>
+        </Toolbar>
+      </AppBar>
+      <main>
+        {/* Hero unit */}
+        <Box
+          sx={{
+            bgcolor: 'background.paper',
+            pt: 8,
+            pb: 6,
+          }}
+        >
+          <Container maxWidth="sm">
+            <Typography
+              component="h1"
+              variant="h2"
+              align="center"
+              color="text.primary"
+              gutterBottom
+            >
+             Mahamed Aden
+            </Typography>
+            <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            Software Engineer | Web Developer
+            </Typography>
+            <Stack
+              sx={{ pt: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="center"
+            >
+              <Button variant=""><a href="https://github.com/Slithur" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" className="git" alt="..."  width={30}/>
+          </a></Button>
+              <Button variant=""><a href="https://www.linkedin.com/in/mahamed-aden-bba919239/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" className="linked" alt="..." type="button" width={30}/>
+          </a></Button>
+            </Stack>
+          </Container>
+        </Box>
+        <Typography
+              component="h1"
+              variant="h2"
+              align="center"
+              color="text.primary"
+              gutterBottom
+            >
+             Projects
+            </Typography>
+        <Container >
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {cards.map((card) => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card
+                  sx={{ height: '100%', display: 'flex', flexDirection: 'column', }}
+                >
+                  <CardMedia
+                    component="img"
+                    
+                    image="https://i.imgur.com/OWOsSND.png"
+                   
+                  />
+
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Guess the song
+                    </Typography>
+                    <Typography>
+                    
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small"><a href="https://github.com/Slithur" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" className="git" alt="..."  width={30}/>
+          </a></Button>
+          <Button size="small"><a href="https://github.com/Slithur" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" className="git" alt="..."  width={30}/>
+          </a></Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+        <Container >
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {cards.map((card) => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card
+                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                >
+                  <CardMedia
+                    component="img"
+                    
+                    image="https://i.imgur.com/fi2d5LN.jpg?1"
+                   
+                  />
+
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Animelist
+                    </Typography>
+                    <Typography>
+                    
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">View <a href="https://github.com/Slithur" target="_blank" rel="noopener noreferrer"></a></Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+        <Container >
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {cards.map((card) => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card
+                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                >
+                  <CardMedia
+                    component="img"
+                    
+                    image="https://camo.githubusercontent.com/a1d6ef7d96e224175a23554c0bbdcfd6185f90708a3239ad3714c45f91b810b6/68747470733a2f2f692e696d6775722e636f6d2f47735559496c772e6a7067"
+                   
+                  />
+
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Watchlist
+                    </Typography>
+                    <Typography>
+                    
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">View</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+        <Container >
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {cards.map((card) => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card
+                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                >
+                  <CardMedia
+                    component="img"
+                    
+                    image="https://i.imgur.com/f7zqpgm.png"
+                   
+                  />
+
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      BuckT
+                    </Typography>
+                    <Typography>
+                    
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">View</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+
+        <Typography
+              component="h1"
+              variant="h2"
+              align="center"
+              color="text.primary"
+              gutterBottom
+            >
+             Languages
+            </Typography>
+        <Container>
+            {cards.map((card) => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card
+                  sx={{ height: '20%', width: '20%', display: 'flex', flexDirection: 'column' }}
+                >
+                  <CardMedia
+                    component="img"
+                    
+                    image="https://i.imgur.com/f7zqpgm.png"
+                   
+                  />
+                </Card>
+              </Grid>
+            ))}
+        </Container>
+        
+      </main>
+      
+    </ThemeProvider>
+  );
+}
