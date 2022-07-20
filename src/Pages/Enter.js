@@ -40,7 +40,7 @@ export default function Album() {
             <CssBaseline />
             <AppBar position="static">
                 <Toolbar>
-                <Link color="inherit" href="https://i.imgur.com/rJ7HSS4.png">
+                <Link color="inherit" href="https://i.imgur.com/Grfj4u8.png">
                 Resume
             </Link>
                 </Toolbar>
