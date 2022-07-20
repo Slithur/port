@@ -1,4 +1,4 @@
 # Portfolio
 
-link (https://i.imgur.com/Grfj4u8.png).
+link (https://classy-sunflower-6d6262.netlify.app/).
 
