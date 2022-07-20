@@ -155,7 +155,7 @@ export default function Album() {
                         <Card sx={{ width: '20%' }}>
                             <CardMedia
                                 component="img"
-                                image="https://i.imgur.com/B4iwLzg.png" />
+                                image="https://i.imgur.com/B4iwLzg.png?1" />
                             <CardContent sx={{ flexGrow: 1, textAlign: 'center'}}>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     BuckT
